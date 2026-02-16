@@ -1,24 +1,28 @@
 # Shiv's AutoHotKey Scripting Project Description
 #### https://github.com/Shiv-MechE 
 
-### Videos of the Scripts in Action:
+## Videos of the Scripts in Action:
 * Fishing Script Youtube: https://youtu.be/Yd7HCKFWxRY
-* Woodcutter Script Youtube: https://youtu.be/RZnMRl5EcEo 
-* Fighter Script Youtube: https://youtu.be/yDFZfMQruyk 
-* Cooker Script Youtube: https://youtu.be/5bvKuFkD314 
+  * [<img src="https://img.youtube.com/vi/Yd7HCKFWxRY/hqdefault.jpg" width="200" height="200"/>](https://www.youtube.com/embed/Yd7HCKFWxRY)
+* Woodcutter Script Youtube: https://youtu.be/RZnMRl5EcEo
+  * [<img src="https://img.youtube.com/vi/RZnMRl5EcEo/hqdefault.jpg" width="200" height="200"/>](https://www.youtube.com/embed/RZnMRl5EcEo)
+* Fighter Script Youtube: https://youtu.be/yDFZfMQruyk
+  * [<img src="https://img.youtube.com/vi/yDFZfMQruyk/hqdefault.jpg" width="200" height="200"/>](https://www.youtube.com/embed/yDFZfMQruyk)
+* Cooker Script Youtube: https://youtu.be/5bvKuFkD314
+  * [<img src="https://img.youtube.com/vi/5bvKuFkD314/hqdefault.jpg" width="200" height="200"/>](https://www.youtube.com/embed/5bvKuFkD314)
 
-### The Project
+## The Project
 Automate gameplay, and, mimic human like gameplay in the MMORPG titled “Oldschool Runescape (OSRS)”.  This game is played by performing repetitive actions, thus, an opportunity for automation is born. However, the environment within the game is dynamic and therefore scripts must be robust in order to adapt.
 
-### Requirements:
+## Requirements:
 The automation MUST mimic human-like behavior, otherwise, unrealistic achievements within the game and robot-like behavior would be noticed by the game developers who would then place restrictions on the player/account. Measures to achieve this are outlined herein.
 
-### In a Nutshell: How These AutoHotKey (AHK) Scripts Work:
+## In a Nutshell: How These AutoHotKey (AHK) Scripts Work:
 At its heart, my project utilizes the color detection capabilities within AutoHotKey to scan the gameplay application for certain objects/entities/interfaces/targets. Scanning is done pixel by pixel within a specified box. Then, depending on the results of scanning for all of the various things within the dynamic environment of the game, an action is taken. To re-iterate, the action taken MUST be done in a way that mimics human like gameplay.
 
 “AutoHotkey is … primarily designed to provide easy keyboard shortcuts or hotkeys, fast macro-creation and software automation to allow users of most computer skill levels to automate repetitive tasks in any Windows application.”
 
-### Measures to Mimic Human-Like Behavior:
+## Measures to Mimic Human-Like Behavior:
 * __Entity clicking:__ Entities are simply things we want to mouse click on. Entities have clickable zones that are irregular “2D blobs”. The script scans the screen pixel by pixel, row by row (or column by column) until the entity’s border’s color is detected. This detected pixel is at the edge/border of the “2D blob”. Clicking the edge of the blobs every-time is not human like. This detected pixel was made the center and a pixel XY away from the center was picked. This picked pixel was then confirmed if it lay within the border of the entity. If yes, this is a clickable zone, and an action was taken to click the pixel.
 * __Gaussian Target Clicking:__ Humans generally do not click targets within a random Length x Width box. Humans click the near the center of the box/target more than the outsides. Therefore, whenever clicking a target, a gaussian distribution click box was created. Furthermore, humans every now and then don’t click exactly where they intended to (“mis-click”). By design, the script may “mis-click” but then almost instantly correct itself as a human would.
 * __Left/Right Click Depress Lengths:__ When humans click on the mouse there is a down stroke and a lift stroke. In between the mouse is held in the down position for some number of milliseconds. http://instantclick.io/click-test was used to find out how long this is for me using multiple click samples. This was then implemented into the project with a +/- buffer for randomization, that is, humans don’t click down for EXACTLY 112ms every time.
@@ -31,13 +35,10 @@ At its heart, my project utilizes the color detection capabilities within AutoHo
 * __Abort:__ Scattered throughout the project are commands to stop the script if unanticipated things are occurring or being detected. This prevents the script from entering a sort of feedback loop of illogical actions being performed that are bot-like and not human like.
 * __Other features:__
 
-### Purpose and/or Applications:
+## Purpose and/or Applications:
 This project helps promote accessibility to those that may be disabled in some capacity. These scripts allow those types of players to make progress and achievements on the game. Howver, there is a stigma in the player-base that these kinds of scripts allow for unfair advantages when abused. Hence, the game developers may or may not put restrictions on players/accounts using these types of scripts.
 
-### Result:
+## Result:
 Complex scripts were successfully created and performed their jobs robustly, that is, without breaking/getting stuck within this dynamic environment. The measures that were employed extended the “life” of the project significantly. Although, eventually unrealistic achievements and bot-like behaviors were detected and restrictions were placed.
 
-
-
-
-### end
+## end
