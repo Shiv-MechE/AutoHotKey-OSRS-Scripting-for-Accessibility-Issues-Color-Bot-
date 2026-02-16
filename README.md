@@ -24,10 +24,10 @@ To automate gameplay, and, mimic human like gameplay in the MMORPGame titled “
   * [<img src="https://img.youtube.com/vi/5bvKuFkD314/hqdefault.jpg" width="200" height="200"/>](https://www.youtube.com/embed/5bvKuFkD314)
 
 ## Requirements:
-The automation MUST mimic human-like behavior, otherwise, unrealistic achievements within the game and robot-like behavior would be noticed by the game developers who would then place restrictions on the player/account. Measures to achieve this are outlined herein.
+The automation MUST mimic human-like behavior, otherwise, unrealistic achievements within the game and robot-like behavior would be noticed by the game developers who would then place restrictions on the player/account. Measures to achieve this requirement are outlined herein.
 
 ## In a Nutshell: How These AutoHotKey (AHK) Scripts Work:
-At its heart, my project utilizes the color detection capabilities within AutoHotKey to scan the gameplay application for certain objects/entities/interfaces/targets. Scanning is done pixel by pixel within a specified box. Then, depending on the results of scanning for all of the various things within the dynamic environment of the game, an action is taken. To re-iterate, the action taken MUST be done in a way that mimics human like gameplay.
+At its heart, my project utilizes the AutoHotKey color detection capabilities to scan the gameplay application for certain objects/entities/interfaces/targets. Scanning is done pixel by pixel within a specified box. Then, depending on the results of scanning for all of the various things within the dynamic environment of the game, an action is taken. To re-iterate, the actions taken MUST be done in a way that mimics human like gameplay.
 
 “AutoHotkey is … primarily designed to provide easy keyboard shortcuts or hotkeys, fast macro-creation and software automation to allow users of most computer skill levels to automate repetitive tasks in any Windows application.”
 
