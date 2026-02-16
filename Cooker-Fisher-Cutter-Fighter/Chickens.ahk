@@ -6,13 +6,12 @@
 ;Try not to have other overlays or markers active that can confuse the script.
 ;Best camera placement is facing West. Have camera at a high position (hold Up Arrow Key).
 ;Set the ScriptOverallRunTime variable to how long you want the script to run before logout. Set the time in Milliseconds. Make sure the negative sign stays there. "ScriptOverallRunTime:=-60000" is correct. "ScriptOverallRunTime:=60000" is incorrect.
-;Keep all AHK files I sent you in 1 folder.
+;Keep all AHK files in 1 folder.
 ;Choose a world where there arnt many people for best script performance.
 ;Strongly suggest botting a max 1-2hrs in a single session (take breaks).
 ;Strongly suggest not botting excessively in a single day, especially if your account is new.
 ;Strongly suggest playing at reasonable hours for your IP location. I.g. if you'r IP is in Italy, bot sometime between 9am and 12pm Italy time.
-;Chickens are high ban chance, be smart!
-;It is in your best interest, as well as mine, not to share the script. Less people using script means less ban chance. Also you paid good money for it. Of course, it's up to you.
+
 
 
 CoordMode, Mouse, Window
