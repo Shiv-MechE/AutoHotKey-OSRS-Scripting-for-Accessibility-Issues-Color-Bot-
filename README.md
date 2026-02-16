@@ -1,6 +1,18 @@
 # Shiv's AutoHotKey Scripting Project Description
 #### https://github.com/Shiv-MechE 
 
+## The Project
+To automate gameplay, and, mimic human like gameplay in the MMORPGame titled “Oldschool Runescape (OSRS)”.  This game is played by performing repetitive actions, thus, an opportunity for automation is born. However, the environment within the game is dynamic and therefore scripts must be robust in order to adapt.
+
+## Folder Structure
+* __Alcher/__ contains the Alching script and all functions created to support it.
+  * __Alcher/Alcher.ahk__ is the actual main script to run.
+* __Cooker-Fisher-Cutter-Fighter/__ contains various main scripts and all the functions created to support it.
+  * The main scripts to run depending on what gameplay tasks you want to automate are
+    * __Cooker-Fisher-Cutter-Fighter/HosidiusFlyFisher.ahk__
+    * __Cooker-Fisher-Cutter-Fighter/HosidiuosCooker.ahk__
+    * __Cooker-Fisher-Cutter-Fighter/HosidiusOakCutter.ahk__
+
 ## Videos of the Scripts in Action:
 * Fishing Script Youtube: https://youtu.be/Yd7HCKFWxRY
   * [<img src="https://img.youtube.com/vi/Yd7HCKFWxRY/hqdefault.jpg" width="200" height="200"/>](https://www.youtube.com/embed/Yd7HCKFWxRY)
@@ -10,9 +22,6 @@
   * [<img src="https://img.youtube.com/vi/yDFZfMQruyk/hqdefault.jpg" width="200" height="200"/>](https://www.youtube.com/embed/yDFZfMQruyk)
 * Cooker Script Youtube: https://youtu.be/5bvKuFkD314
   * [<img src="https://img.youtube.com/vi/5bvKuFkD314/hqdefault.jpg" width="200" height="200"/>](https://www.youtube.com/embed/5bvKuFkD314)
-
-## The Project
-Automate gameplay, and, mimic human like gameplay in the MMORPG titled “Oldschool Runescape (OSRS)”.  This game is played by performing repetitive actions, thus, an opportunity for automation is born. However, the environment within the game is dynamic and therefore scripts must be robust in order to adapt.
 
 ## Requirements:
 The automation MUST mimic human-like behavior, otherwise, unrealistic achievements within the game and robot-like behavior would be noticed by the game developers who would then place restrictions on the player/account. Measures to achieve this are outlined herein.
@@ -33,12 +42,12 @@ At its heart, my project utilizes the color detection capabilities within AutoHo
 * __Run/Walk:__ In the game you walk around the world. You can run if you have “energy”. If you don’t, you must walk until your energy slowly regenerates. The project will toggle the run feature at random times. It is actually human like to click the run feature even if you don’t have energy (like an “OCD Tick” phenomenon amongst people).
 * __Fileappend:__ AutoHotKey has a “fileappend” command that can be used to write text into a text file. Throughout script development, this was used as an indicator of where the script may be breaking. Essentially “if the desired action was not performed, then fileappend xyz”. This allowed me to read through the text file and see exactly where an action “struggled”. Once the script was tested to be robust, the fileappend lines were made into comments to save computing power.
 * __Abort:__ Scattered throughout the project are commands to stop the script if unanticipated things are occurring or being detected. This prevents the script from entering a sort of feedback loop of illogical actions being performed that are bot-like and not human like.
-* __Other features:__
+* __Other Measures:__
 
 ## Purpose and/or Applications:
 This project helps promote accessibility to those that may be disabled in some capacity. These scripts allow those types of players to make progress and achievements on the game. Howver, there is a stigma in the player-base that these kinds of scripts allow for unfair advantages when abused. Hence, the game developers may or may not put restrictions on players/accounts using these types of scripts.
 
 ## Result:
-Complex scripts were successfully created and performed their jobs robustly, that is, without breaking/getting stuck within this dynamic environment. The measures that were employed extended the “life” of the project significantly. Although, eventually unrealistic achievements and bot-like behaviors were detected and restrictions were placed.
+The scripts were performed their jobs robustly, that is, without breaking/getting stuck within the dynamic environment of the game. The measures that were employed extended the “life” of the project significantly. Although, eventually unrealistic achievements and bot-like behaviors were detected and restrictions were placed.
 
 ## end
