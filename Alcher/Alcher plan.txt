@@ -1,0 +1,10 @@
+MagicPageDetect
+DetectNatureRune/inventory
+Random Clicks around alch button
+Auto-logout timer in 5-6 hours
+Take breaks but dont logout every like 20 mins, add mouse move offscreen
+
+if mage page not detected for like 15-70 seconds, press the F key for it and move mosue to spell and start clicking again
+If the nature rune item tag not detected for like 15-70 seconds, press the F key for it and move mosue to spell and start clicking again 
+
+if time since last alch is certain time, slow down time between clicks
